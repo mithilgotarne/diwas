@@ -98,9 +98,17 @@ HEADER
 	text-align: center;
 }
 
+#message{
+    color: #2c3e50;
+    font-weight: 900;
+}
+
 @media (max-width: 740px){
     #timer{
     background: rgba(255,255,255,0.1);
+    }
+    #message{
+        color: white;
     }
 }
 /******************************************************************************************************************************
