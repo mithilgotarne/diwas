@@ -59,14 +59,17 @@ HEADER
     text-align: center;
     width: 130px;
     border-radius: 50%;
-    border: 4px solid rgba(255, 255, 255, .6);
+    border: 4px solid #2c3e50;
+    color: #2c3e50;
+    font-weight: 900;
 }
 .timer_box h1{
     font-size: 48px;
     margin-top: 5px;
     margin-bottom: 0px;
     font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
-    color: white;
+    color: #2c3e50;
+    font-weight: 900;
 }
 .timer_box p{ margin-top: 0px;}
 #layer{
@@ -93,6 +96,12 @@ HEADER
 
 .centered {
 	text-align: center;
+}
+
+@media (max-width: 740px){
+    #timer{
+    background: rgba(255,255,255,0.1);
+    }
 }
 /******************************************************************************************************************************
 RESPONSIVE
