@@ -6,7 +6,7 @@ COMMING SOON PAGE
     * Set your date here  (YEAR, MONTH (0 for January/11 for December), DAY, HOUR, MINUTE, SECOND)
     * according to the GMT+0 Timezone
     **/
-    var launch = new Date(2016, 09, 12, 18, 30);
+    var launch = new Date(2016, 09, 12, 18, 30, 0);
     /**
     * The script
     **/
@@ -19,14 +19,14 @@ COMMING SOON PAGE
     setDate();
     function setDate(){
         var now = new Date();
-        if( launch < now ){
-            days.html('<h1>0</H1><p>Day</p>');
-            hours.html('<h1>0</h1><p>Hour</p>');
-            minutes.html('<h1>0</h1><p>Minute</p>');
-            seconds.html('<h1>0</h1><p>Second</p>');
-            //message.html('OUR SITE IS NOT READY YET...');
-        }
-        else{
+        // if( launch < now ){
+        //     days.html('<h1>0</H1><p>Day</p>');
+        //     hours.html('<h1>0</h1><p>Hour</p>');
+        //     minutes.html('<h1>0</h1><p>Minute</p>');
+        //     seconds.html('<h1>0</h1><p>Second</p>');
+        //     //message.html('OUR SITE IS NOT READY YET...');
+        // }
+        // else{
             var s = -now.getTimezoneOffset()*60 + (launch.getTime() - now.getTime())/1000;
             var d = Math.floor(s/86400);
             days.html('<h1>'+d+'</h1><p>Day'+(d>1?'s':''),'</p>');
@@ -44,7 +44,7 @@ COMMING SOON PAGE
             setTimeout(setDate, 1000);
 
             //message.html('OUR SITE IS NOT READY YET, BUT WE ARE COMING SOON');
-        }
+       // }
     }
 })(jQuery);
 /******************************************************************************************************************************
