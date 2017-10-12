@@ -52,6 +52,9 @@ COMMING SOON PAGE
             setTimeout(setDate, 1000);
 
             //message.html('OUR SITE IS NOT READY YET, BUT WE ARE COMING SOON');
+            if(d+h+m+s == 0){
+
+            }
         //}
     }
 })(jQuery);
