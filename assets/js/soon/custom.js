@@ -15,6 +15,7 @@ COMMING SOON PAGE
     var hours = $('#hours');
     var minutes = $('#minutes');
     var seconds = $('#seconds');
+    var timer = $('#timer');
     
     setDate();
     function setDate(){
@@ -52,8 +53,14 @@ COMMING SOON PAGE
             setTimeout(setDate, 1000);
 
             //message.html('OUR SITE IS NOT READY YET, BUT WE ARE COMING SOON');
-            if(d+h+m+s == 0){
-
+            if(d+h+m+s === 0){
+                days.hide();
+                hours.hide();
+                minutes.hide();
+                seconds.hide();
+                $('#hbd').show();
+            }else{
+                $('#hbd').hide();
             }
         //}
     }
