@@ -51,6 +51,7 @@ COMMING SOON PAGE
                 s=0;
             seconds.html('<h1>'+s+'</h1><p>Second'+(s>1?'s':''),'</p>');
             setTimeout(setDate, 1000);
+            var height = timer.height();
 
             //message.html('OUR SITE IS NOT READY YET, BUT WE ARE COMING SOON');
             if(d+h+m+s === 0){
@@ -59,6 +60,7 @@ COMMING SOON PAGE
                 minutes.hide();
                 seconds.hide();
                 $('#hbd').show();
+                timer.css('min-height', height+'px');
             }else{
                 $('#hbd').hide();
             }
